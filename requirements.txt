@@ -1,0 +1,28 @@
+# This file lists all dependencies for the project.
+
+fastapi==0.115.12 #A modern, high-performance web framework for building APIs with Python, based on standard Python type hints. It automatically generates interactive Swagger/OpenAPI documentation
+
+uvicorn[standard]==0.34.2 #A lightning-fast ASGI web server used to run FastAPI applications. The [standard] extra installs optimized dependencies (like uvloop) for higher concurrency and performance
+
+jinja2==3.1.6 #A full-featured templating engine for Python, commonly used to render HTML templates if your FastAPI application serves server-rendered web pages alongside its API.
+
+#Configuration & Data Validation
+pydantic-settings==2.8.1 #An extension of Pydantic used to manage application settings and environment variables in a type-safe way (e.g., loading database URLs or API keys from .env files).
+
+#Cloud & Database
+boto3==1.37.38 #The official Amazon Web Services (AWS) SDK for Python, allowing your application to interact with services like S3 (file storage), DynamoDB, and Bedrock.
+psycopg[binary,pool]==3.2.6 #The modern PostgreSQL adapter for Python (psycopg 3). The binary extra includes precompiled C libraries for easy installation, and pool enables built-in connection pooling for high-concurrency database access.
+
+#Document Parsing
+pypdf==5.4.0 #A pure-Python library used to read, extract text from, split, and manipulate PDF documents
+python-docx==1.1.2 #A library for creating, reading, and modifying Microsoft Word (.docx) files programmatically.
+
+#HTTP & AI / Agent Frameworks
+httpx==0.28.1 #A fully featured asynchronous HTTP client for Python, used for making calls to external APIs or microservices.
+langgraph>=0.2,<2 #A framework built on top of LangChain for building stateful, multi-actor LLM applications and agentic workflows using graph structures (nodes and edges).
+pinecone>=5,<9 #The official client library for Pinecone, a managed vector database used to store and search high-dimensional embeddings for RAG (Retrieval-Augmented Generation) applications.
+
+python-dotenv==1.0.1 #Reads key-value pairs from a .env file and loads them into environment variables (os.environ). It allows you to keep sensitive credentials like API keys and database passwords out of your source code
+
+# Agent observability 
+glassflow-rius>=1.0,<2.0 #An OpenTelemetry-native agent observability library (rius) used to trace AI agent workflows, model calls, tool executions, token usage, and costs, exporting data to the GlassFlow platform or an OTLP-compatible backend.
