@@ -9,3 +9,8 @@ conda activate enterprise-rag
 #3 installing the packages used in this application use below command, it will pull all the packages mentioned in requriments.tx
 
 pip install -r requirements.txt
+
+
+#Implementation Steps:
+
+Phase 1: Infrastructure setup : Environment variable setup, PostGres SQL, AWS and Pinecone
